@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="pt-6 pb-7 text-white md:py-11 md:mb-[1.875rem] md:text-grayish-violet">
+      <div class="wrapper | flex items-center justify-between md:gap-10">
+        <a href="#"><img src="images/logo.svg" alt="shortly" /></a>
+        <div id="nav-wrapper" class="hidden absolute top-[4.375rem] inset-x-[5%] md:static bg-very-dark-blue md:bg-white px-[7%] py-11 md:p-0 rounded-xl md:rounded-none md:flex md:items-center md:justify-between md:flex-grow text-center max-w-[30rem] md:max-w-none ml-auto md:ml-0">
+          <nav>
+            <ul role="list" class="grid md:flex gap-[1.875rem] text-base font-bold">
+              <li><a href="#" class="hover:text-grayish-violet focus-visible:text-grayish-violet md:hover:text-very-dark-blue md:focus-visible:text-very-dark-blue">Features</a></li>
+              <li><a href="#" class="hover:text-grayish-violet focus-visible:text-grayish-violet md:hover:text-very-dark-blue md:focus-visible:text-very-dark-blue">Pricing</a></li>
+              <li><a href="#" class="hover:text-grayish-violet focus-visible:text-grayish-violet md:hover:text-very-dark-blue md:focus-visible:text-very-dark-blue">Resources</a></li>
+            </ul>
+          </nav>
+          <hr class="md:hidden mt-[1.875rem] mb-[1.875rem] h-[1px] text-grayish-violet border-"/>
+          <div class="grid gap-[1.375rem] md:flex items-center md:flex-row md:gap-9 text-base font-bold">
+            <a href="#" class="hover:text-grayish-violet focus-visible:text-grayish-violet md:hover:text-very-dark-blue md:focus-visible:text-very-dark-blue">Login</a>
+            <button class="rounded-full bg-cyan text-white py-[.875rem] md:px-5 md:py-2.5 cursor-pointer hover:opacity-50 focus-visible:opacity-50">Sign Up</button>
+          </div>
+        </div>
+        <button id="nav-toggle" aria-controls="nav-wrapper" aria-expanded="false" class="cursor-pointer md:hidden">
+          <span class="visually-hidden">Menu</span>
+          <i class="text-[1.75rem] fas fa-bars text-grayish-violet"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="mb-[10.25rem] md:mb-[9.125rem] overflow-hidden max-w-[80rem] mx-auto">
+        <div class="wrapper | grid gap-[2.625rem] md:gap-[5%] md:grid-cols-2 place-items-center">
+          <div class="md:order-2 -mr-[40%]">
+            <img src="images/illustration-working.svg" alt="">
+          </div>
+          <div class="text-center md:text-left">
+            <h1 class="mb-[1.375rem]">More than just shorter links</h1>
+            <p class="mb-6 md:mb-7 md:max-w-[38ch]">
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <button class="hover:opacity-50 focus-visible:opacity-50 text-white rounded-full bg-cyan w-[12.625rem] h-[3.375rem]">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <section class="pb-20 bg-light-gray md:pb-48">
+        <div class="wrapper">
+          <form action="#" class="transform -translate-y-1/2 max-w-[35rem] md:max-w-none mx-auto">
+            <div class="relative grid gap-4 p-6 bg-no-repeat bg-cover md:p-10 lg:p-14 bg-dark-blue md:gap-5 md:grid-cols-form rounded-2xl bg-shorten-mobile md:bg-shorten-desktop bg-left-4-bottom-2 md:bg-left md:bg-top">
+              <div>
+                <label for="url" class="visually-hidden">Enter a valid url</label>
+                <input type="url" name="url" id="url" placeholder="Shorten a link here..." class="w-full h-12 md:h-16 rounded-lg pl-4 md:pl-[1.875rem]"/>
+                <span class="hidden">Please add a link</span>
+              </div>
+              <button class="hover:opacity-50 focus-visible:opacity-50 h-12 text-base font-bold text-white rounded-lg bg-cyan md:h-16">
+                Shorten It!
+              </button>
+            </div>
+          </form>
+          <div class="text-center">
+            <h2 class="text-[1.75rem] md:text-4xl mb-8 md:mb-6">Advanced Statistics</h2>
+            <p class="mb-[3.375rem] max-w-[45ch] mx-auto">
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="split-columns grid gap-24 pt-10 md:pt-[3.125rem] md:gap-5 lg:gap-7 md:grid-cols-3 relative">
+            <article class="grid gap-4 px-10 pb-10 mx-auto text-center bg-white md:px-6 md:pb-6 lg:px-8 lg:pb-8 md:text-left md:mx-0 max-w-[30rem] rounded-lg z-[1]">
+              <div class="mx-auto md:mx-0 mt-[-2.8125rem] h-[5.625rem] w-[5.625rem] bg-very-dark-blue rounded-full grid place-items-center lg:mb-4">
+                <img src="images/icon-brand-recognition.svg" alt="brand recognition"/>
+              </div>
+              <h3 class="text-xl">Brand Recognition</h3>
+              <p class="text-sm lg:text-base">
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </article>
+            <article class="grid gap-4 px-10 pb-10 text-center bg-white rounded-lg md:px-6 md:pb-6 lg:px-8 lg:pb-8 md:text-left md:translate-y-12 max-w-[30rem] mx-auto md:mx-0 z-[1]">
+              <div class="mx-auto md:mx-0 mt-[-2.8125rem] h-[5.625rem] w-[5.625rem] bg-very-dark-blue rounded-full grid place-items-center lg:mb-4">
+                <img src="images/icon-detailed-records.svg" alt="detailed records"/>
+              </div>
+              <h3 class="text-xl">Detailed Records</h3>
+              <p class="text-sm lg:text-base">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </article>
+            <article class="grid gap-4 px-10 pb-10 text-center bg-white rounded-lg md:translate-y-24 md:px-6 md:pb-6 lg:px-8 lg:pb-8 md:text-left max-w-[30rem] mx-auto md:mx-0 z-[1]">
+              <div class="mx-auto md:mx-0 mt-[-45px] h-[90px] w-[90px] bg-very-dark-blue rounded-full grid place-items-center lg:mb-4">
+                <img src="images/icon-fully-customizable.svg" alt="fully customizable"/>
+              </div>
+              <h3 class="text-xl">Fully Customizable</h3>
+              <p class="text-sm lg:text-base">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="bg-boost-mobile md:bg-boost-desktop bg-no-repeat bg-cover pt-24 pb-20 bg-dark-blue">
+        <div class="wrapper text-center">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl text-white mb-6">Boost your links today</h2>
+          <button class="hover:opacity-50 focus-visible:opacity-50 text-white rounded-full bg-cyan text-lg font-bold w-48 h-14">Get Started</button>
+        </div>
+      </section>
+    </main>
+    <footer class="text-grayish-violet bg-dark-violet py-[3.125rem] md:py-[4.375rem]">
+      <div class="wrapper flex flex-col gap-14 lg:gap-[normal] lg:flex-row items-center lg:items-stretch lg:justify-between">
+        <a href="#">
+          <img src="images/logo-white.svg" alt="shortly"/>
+        </a>
+        <div class="flex flex-col gap-11 lg:flex-row lg:gap-24">
+          <nav class="flex flex-col gap-11 sm:flex-row sm:gap-[4.625rem] text-center sm:text-left text-base">
+            <div>
+              <p class="font-bold text-white mb-7">Features</p>
+              <ul role="list" class="space-y-2 md:space-y-3">
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Link Shortening</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Branded Links</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Analytics</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-white mb-7">Resources</p>
+              <ul role="list" class="space-y-2 md:space-y-3">
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Blog</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Developers</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Support</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-white mb-7">Company</p>
+              <ul role="list" class="space-y-2 md:space-y-3">
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">About</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Our Team</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Careers</a></li>
+                <li><a href="#" class="hover:text-cyan focus-visible:text-cyan">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <ul role="list" class="flex gap-5 justify-center lg:justify-start">
+            <li><a aria-label="Facebook" href="#">
+              <svg class="icon w-6 aspect-square fill-white hover:fill-cyan focus-visible:fill-cyan">
+                <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+              </svg></a>
+            </li>
+            <li><a aria-label="Twitter" href="#">
+              <svg class="icon w-6 aspect-square fill-white hover:fill-cyan focus-visible:fill-cyan">
+                <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+              </svg></a>
+            </li>
+            <li><a aria-label="Pinterest" href="#">
+              <svg class="icon w-6 aspect-square fill-white hover:fill-cyan focus-visible:fill-cyan">
+                <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+              </svg></a>
+            </li>
+            <li><a aria-label="Instagram" href="#">
+              <svg class="icon w-6 aspect-square fill-white hover:fill-cyan focus-visible:fill-cyan">
+                <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
